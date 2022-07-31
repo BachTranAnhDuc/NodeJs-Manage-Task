@@ -79,12 +79,30 @@ body {
   background-color: var(--grey-100);
   line-height: 1;
   font-weight: 300;
+
+  display: grid;
+  /* grid-template-columns: minmax(5rem, 1fr); */
 }
 
 .container {
-  max-width: 50vw;
+  /* max-width: 50vw; */
   margin: 6rem auto;
-  padding: 8rem 2.4rem;
+  padding: 8rem 12rem;
+
+  background-color: var(--white);
+  box-shadow: var(--shadow-4);
+
+  display: grid;
+  gap: 2.4rem;
+
+  justify-content: center;
+}
+
+.container-2 {
+  /* justify-self: start; */
+  /* max-width: 50vw; */
+  margin: 6rem auto;
+  padding: 8rem 10rem;
 
   background-color: var(--white);
   box-shadow: var(--shadow-4);
@@ -105,7 +123,15 @@ body {
   /* text-transform: uppercase; */
 }
 
+.heading--fifth {
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  visibility: hidden;
+}
+
 .form-task {
+  margin-top: 1.6rem;
   display: grid;
 
   grid-template-columns: 1fr minmax(min-content, 8rem);
@@ -184,6 +210,8 @@ body {
 
 .task__complete-icon {
   color: var(--green-dark);
+
+  visibility: hidden;
 }
 
 .task__link:link,
@@ -213,8 +241,86 @@ body {
 
 .alert.success {
   color: var(--green-dark);
+  visibility: hidden;
 }
 
 .alert.error {
   color: var(--red-dark);
+  visibility: hidden;
+}
+
+.completed h5 {
+  text-decoration: line-through;
+}
+
+.completed .task__complete-icon {
+  visibility: visible;
+}
+
+/* FORM EDIT */
+.form-edit {
+  margin-top: 0.8rem;
+  display: grid;
+
+  gap: 3.2rem;
+}
+
+.form-edit__control {
+  display: grid;
+
+  grid-template-columns: minmax(min-content, 15rem) 1fr;
+
+  align-items: center;
+}
+
+.form-edit__label {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.form-edit__input {
+  justify-self: start;
+
+  padding: 1.6rem 3.2rem;
+
+  /* width: 115%; */
+
+  border: 2px solid var(--primary-200);
+
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.btn--black:link,
+.btn--black:visited {
+  justify-self: center;
+
+  text-decoration: none;
+
+  padding: 1.6rem 3.2rem;
+  border: none;
+  background-color: var(--primary-1100);
+  color: var(--white);
+
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn--black:hover {
+  background-color: var(--primary-900);
+}
+
+.btn-edit {
+  margin-top: 0.8rem;
+  padding: 1.6rem 3.2rem;
+}
+
+.read {
+  border: none;
+}
+
+.type-name {
+  width: 20rem;
 }

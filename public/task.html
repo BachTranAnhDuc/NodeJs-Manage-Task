@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-2">
+      <h2 class="heading--secondary">Edit task 🥳</h2>
+
+      <form class="form-edit">
+        <div class="form-edit__control">
+          <label for="id" class="form-edit__label">Task ID</label>
+          <input
+            type="text"
+            id="id"
+            readonly
+            class="form-edit__input type-name read"
+          />
+        </div>
+
+        <div class="form-edit__control">
+          <label for="name" class="form-edit__label">Name</label>
+          <input type="text" id="name" class="form-edit__input type-name" />
+        </div>
+
+        <div class="form-edit__control">
+          <label for="complete" class="form-edit__label">Completed</label>
+          <input type="checkbox" class="form-edit__input" />
+        </div>
+
+        <button type="submit" class="btn btn-edit">Edit</button>
+      </form>
+    </div>
+
+    <a href="./index.html" class="btn--black">Back To Manage</a>
+  </body>
+</html>
