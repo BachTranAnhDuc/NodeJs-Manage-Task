@@ -1,0 +1,26 @@
+{
+  "name": "manage-task",
+  "version": "1.0.0",
+  "description": "manage task",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BachTranAnhDuc/NodeJs-Manage-Task.git"
+  },
+  "author": "Bach Tran Anh Duc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BachTranAnhDuc/NodeJs-Manage-Task/issues"
+  },
+  "homepage": "https://github.com/BachTranAnhDuc/NodeJs-Manage-Task#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
